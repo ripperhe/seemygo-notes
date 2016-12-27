@@ -12,7 +12,7 @@
 
 ### 流程图
 
-![流程图](https://github.com/ripperhe/Seemygo-notes/blob/master/01-FM/CocoaPods/流程图.png)
+![流程图](https://github.com/ripperhe/Seemygo-notes/blob/master/01-FM/CocoaPods/image/流程图.png)
 
 ### 安装 CocoaPods
 
@@ -104,7 +104,7 @@
 		sudo gem uninstall cocoapods
 		sudo gem install cocoapods
 			
-* 升级到10.11, CocoaPods报错: command not found, 解决方案 
+* 升级到10.11, CocoaPods报错: command not found, 解决方案 ![](https://github.com/ripperhe/Seemygo-notes/blob/master/01-FM/CocoaPods/image/安装报错.png)
 	
 		sudo gem update --system
 		sudo gem uninstall cocoapods
