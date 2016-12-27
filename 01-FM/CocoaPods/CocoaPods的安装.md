@@ -1,4 +1,4 @@
-## cocoapods 的安装
+## CocoaPods 的安装
 
 ### 作用
 
