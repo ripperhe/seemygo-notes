@@ -1,6 +1,6 @@
 # Seemygo-notes
 
-小码哥iOS项目拓展班 - 学习笔记
+小码哥 iOS 项目拓展班 - 学习笔记
 
 <!--https://github.com/ripperhe/Seemygo-notes/blob/master/**/**/**.md-->
 
