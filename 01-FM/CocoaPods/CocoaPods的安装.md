@@ -1,6 +1,6 @@
-## CocoaPods 的安装
+# CocoaPods 的安装
 
-### 作用
+## 作用
 
 * 帮助管理和维护第三方框架
 * 问题1: 之前如果我们手动集成第三方框架, 有可能会添加很多配置, 和系统依赖框架, 繁琐易错
@@ -10,22 +10,22 @@
 	* 一个命令解决
 * 简单理解: 就是快速的搜索到第三方框架, 然后自动集成到工程里面来, 并编译成一个libPod.a的静态库给我们项目用
 
-### 流程图
+## 流程图
 
 ![流程图](https://raw.githubusercontent.com/ripperhe/Seemygo-notes/master/01-FM/CocoaPods/image/1_流程图.png)
 
-### 安装 CocoaPods
+## 安装 CocoaPods
 
-#### gem 简介
+### gem 简介
 
-##### 什么是gem?
+#### 什么是gem?
 
 * Gem 是一个管理 Ruby 库和程序的标准包，它通过 Ruby Gem（如 [http://rubygems.org/](https://rubygems.org/) ）源来查找、安装、升级和卸载软件包，非常的便捷。
 * 软件包数据源(意思就是从哪里下载软件)
 	* [https://rubygems.org/](https://rubygems.org/)
 	* [https://gems.ruby-china.org/](https://gems.ruby-china.org/)
 
-##### 常用命令
+#### 常用命令
 
 * 查看gem版本
 
@@ -68,7 +68,7 @@
 	* 代表以管理员身份运行该命令
 	* 原因: 因为有可能安装软件包的过程当中, 需要创建文件等等, 必须有管理员权限才能操作
 
-#### 有时 ruby 版本过低也导致升级失败
+### 有时 ruby 版本过低也导致升级失败
 
 * 可以安装 RVM(Ruby 版本管理器) 升级 ruby
 * 安装RVM
@@ -94,7 +94,7 @@
 	* 如果安装失败, 可能是没有安装 `homebrew` , 先安装即可
 		* [http://brew.sh/index_zh-cn.html](http://brew.sh/index_zh-cn.html)
 
-#### 使用 gem 安装 CocoaPods
+### 使用 gem 安装 CocoaPods
 
 	sudo gem install cocoapods
 	
@@ -110,7 +110,7 @@
 		sudo gem uninstall cocoapods
 		sudo gem install -n /usr/local/bin cocoapods
 
-####  验证成功
+###  验证成功
 
 	pod --version
 
