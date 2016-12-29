@@ -16,3 +16,4 @@
 	* [使用框架的人需要做](https://github.com/ripperhe/Seemygo-notes/blob/master/01-FM/CocoaPods/使用框架的人需要做.md)
 	* [开发框架的人需要做](https://github.com/ripperhe/Seemygo-notes/blob/master/01-FM/CocoaPods/开发框架的人需要做.md)
 	* [CocoaPods 本地私有库的使用](https://github.com/ripperhe/Seemygo-notes/blob/master/01-FM/CocoaPods/CocoaPods本地私有库的使用.md)
+	* [CocoaPods 远程私有库的使用](https://github.com/ripperhe/Seemygo-notes/blob/master/01-FM/CocoaPods/CocoaPods远程私有库的使用.md)
