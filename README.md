@@ -14,3 +14,4 @@
 * CocoaPods
 	* [CocoaPods 的安装](https://github.com/ripperhe/Seemygo-notes/blob/master/01-FM/CocoaPods/CocoaPods的安装.md)
 	* [使用框架的人需要做](https://github.com/ripperhe/Seemygo-notes/blob/master/01-FM/CocoaPods/使用框架的人需要做.md)
+	* [开发框架的人需要做](https://github.com/ripperhe/Seemygo-notes/blob/master/01-FM/CocoaPods/开发框架的人需要做.md)
