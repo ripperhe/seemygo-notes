@@ -6,7 +6,7 @@
 
 <!--https://github.com/ripperhe/Seemygo-notes/blob/master/**/**/**.md-->
 
-## 01-FM
+## 01-FM [@wangshunzi](https://github.com/wangshunzi)
 
 * Git
 	* [源代码管理工具 Git](https://github.com/ripperhe/Seemygo-notes/blob/master/01-FM/Git/源代码管理工具Git.md)
@@ -18,3 +18,5 @@
 	* [CocoaPods 本地私有库的使用](https://github.com/ripperhe/Seemygo-notes/blob/master/01-FM/CocoaPods/CocoaPods本地私有库的使用.md)
 	* [CocoaPods 远程私有库的使用](https://github.com/ripperhe/Seemygo-notes/blob/master/01-FM/CocoaPods/CocoaPods远程私有库的使用.md)
 	* [CocoaPods 重要路径](https://github.com/ripperhe/Seemygo-notes/blob/master/01-FM/CocoaPods/CocoaPods重要路径.md)
+
+## 02-课堂 [@iThinkerYZ](https://github.com/iThinkerYZ)
