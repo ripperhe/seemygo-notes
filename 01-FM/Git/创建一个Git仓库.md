@@ -21,13 +21,15 @@ git commit -m '初始化'
 	* coding.net
 * 添加远程仓库关联
 
-	```shell
+	```bash
 	git remote add origin 远程仓库地址
 	```
 
 * 提交代码到远程仓库
 
-		git push origin master
+	```bash
+	git push origin master
+	```
 
 * 备注: 关于权限
 	1. 使用用户名和密码
@@ -35,15 +37,21 @@ git commit -m '初始化'
 
 ### 本地打标签备份, 并提交标签
 
-	git tag 标签名称
-	git push --tags
+```bash
+git tag 标签名称
+git push --tags
+```
 
 ### 删除本地/远程标签
 
 * 删除本地
  
-		git tag -d 标签名称
+	```bash
+	git tag -d 标签名称
+	```
 
 * 删除远程  
 
-		git push origin :标签名称
+	```bash
+	git push origin :标签名称
+	```

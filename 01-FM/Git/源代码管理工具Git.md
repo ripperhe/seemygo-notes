@@ -15,32 +15,45 @@
 
 ### 初始化本地仓库
 
-	git init
+```bash
+git init
+```
 
 ### 查看文件状态
 
-	git status
+```bash
+git status
+```
 
 ### 添加文件到暂缓区
 
-	git add .
+```bash
+git add .
+```
 
 ### 从暂缓区提交文件到本地代码仓库
 
-	git commit -m "注释"
+```bash
+git commit -m "注释"
+```
 
 ### 打标签
 
-	git tag -a '标签' -m "注释"
+```bash
+git tag -a '标签' -m "注释"
+```
 
 ### 查看标签
 
-	git tag
+```bash
+git tag
+```
 
 ### 删除标签
 
-	git tag -d '标签名称'
-
+```bash
+git tag -d '标签名称'
+```
 
 ### 远程仓库操作
 
@@ -50,17 +63,25 @@
 		* SSH 的验证配置
 	* GitHub / GitLab / Coding ...
 * 给本地仓库添加添加远程仓库关联地址
-		
-		git remote add origin 远程仓库地址
+	
+	```bash	
+	git remote add origin 远程仓库地址
+	```
 
 * 上传本地代码到远程仓库
 
-		git push origin master
+	```bash
+	git push origin master
+	```
 		 
 * 上传标签到远程仓库
 
-		git push --tags
+	```bash
+	git push --tags
+	```
 	
 * 从远程仓库删除标签
 
-		git push origin :标签
+	```bash
+	git push origin :标签
+	```

@@ -7,7 +7,9 @@
 	
 ## 创建仓库描述文件
 
-	pod spec create XXX
+```bash
+pod spec create XXX
+```
 	
 设置文件内, 重要字段
 	

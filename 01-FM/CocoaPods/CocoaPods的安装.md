@@ -29,40 +29,58 @@
 
 * 查看gem版本
 
-		gem --version
+	```bash
+	gem --version
+	```
 
 * 更新gem
 
-		sudo gem update --system
+	```bash
+	sudo gem update --system
+	```
 	
 	* 注解: `sudo` 是以超级管理员的身份操作
 * 查看数据源
 
-		gem sources
+	```bash
+	gem sources
+	```
 
 * 删除数据源
 	
-		gem sources --remove https://rubygems.org/
+	```bash
+	gem sources --remove https://rubygems.org/
+	```
 
 * 添加数据源
 
-		gem sources -a https://ruby.taobao.org/
+	```bash
+	gem sources -a https://gems.ruby-china.org/
+	```
 
 *  搜索软件包
 
-		gem search 软件包关键字
+	```bash
+	gem search 软件包关键字
+	```
 
 * 安装软件包
 
-		gem install 软件包名称
+	```bash
+	gem install 软件包名称
+	```
 
 * 安装上一个版本软件包
 
-		gem install cocoapods --pre
+	```bash
+	gem install cocoapods --pre
+	```
 
 * 卸载安装包
 
-		gem uninstall 软件包名称
+	```bash
+	gem uninstall 软件包名称
+	```
 
 * 注意: 以上命令最好在使用之前, 都添加 `sudo`
 	* 代表以管理员身份运行该命令
@@ -73,44 +91,62 @@
 * 可以安装 RVM(Ruby 版本管理器) 升级 ruby
 * 安装RVM
 
-		curl -L get.rvm.io | bash -s stable
+	```bash
+	curl -L get.rvm.io | bash -s stable
+	```
 
 * 验证是否成功
 
-		rvm -v
+	```bash
+	rvm -v
+	```
 
 * 查看ruby版本
 
-		ruby -v
+	```bash
+	ruby -v
+	```
 		
 * 列出当前所有可用版本
 
-		rvm list known
+	```bash
+	rvm list known
+	```
 		
 * 安装指定版本ruby
 
-		rvm install ruby --head
+	```bash
+	rvm install ruby --head
+	```
 		
 	* 如果安装失败, 可能是没有安装 `homebrew` , 先安装即可
 		* [http://brew.sh/index_zh-cn.html](http://brew.sh/index_zh-cn.html)
 
 ### 使用 gem 安装 CocoaPods
 
-	sudo gem install cocoapods
+```bash
+sudo gem install cocoapods
+```
 	
 * 安装失败的解决方案
 	
-		sudo gem update --system
-		sudo gem uninstall cocoapods
-		sudo gem install cocoapods
+	```bash
+	sudo gem update --system
+	sudo gem uninstall cocoapods
+	sudo gem install cocoapods
+	```
 			
 * 升级到10.11, CocoaPods报错: command not found, 解决方案 ![](https://raw.githubusercontent.com/ripperhe/Seemygo-notes/master/01-FM/CocoaPods/image/1_安装报错.png)
 	
-		sudo gem update --system
-		sudo gem uninstall cocoapods
-		sudo gem install -n /usr/local/bin cocoapods
+	```bash
+	sudo gem update --system
+	sudo gem uninstall cocoapods
+	sudo gem install -n /usr/local/bin cocoapods
+	```
 
 ###  验证成功
 
-	pod --version
+```bash
+pod --version
+```
 
