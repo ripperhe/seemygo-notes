@@ -8,9 +8,11 @@
 
 进入文件夹
 
-	git init
-	git add .
-	git commit -m '初始化'
+```bash
+git init
+git add .
+git commit -m '初始化'
+```
 
 ### 提交代码到远程仓库
 
@@ -19,7 +21,9 @@
 	* coding.net
 * 添加远程仓库关联
 
-		git remote add origin 远程仓库地址
+	```shell
+	git remote add origin 远程仓库地址
+	```
 
 * 提交代码到远程仓库
 
