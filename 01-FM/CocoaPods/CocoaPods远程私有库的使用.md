@@ -64,12 +64,14 @@
 
 * 如果想在pod仓库中添加子仓库，使用 subspec
 
-		s.subspec 'XXXSub' do |sb|
-			sb.source_files = '相对路径/**/*'
-			sb.public_header_files = '相对路径/**/*.h'
-			sb.resource = "相对路径/**/*.{bundle,nib,xib}"
-			sb.dependency 'xxx', '~> 1.0.0'
-		end
+	```ruby
+	s.subspec 'XXXSub' do |sb|
+		sb.source_files = '相对路径/**/*'
+		sb.public_header_files = '相对路径/**/*.h'
+		sb.resource = "相对路径/**/*.{bundle,nib,xib}"
+		sb.dependency 'xxx', '~> 1.0.0'
+	end
+	```
 
 * **注意: 不要在头文件导入依赖其他库的头文件**
 * 测试
