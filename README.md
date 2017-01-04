@@ -18,5 +18,7 @@
 	* [CocoaPods 本地私有库的使用](https://github.com/ripperhe/Seemygo-notes/blob/master/01-FM/CocoaPods/CocoaPods本地私有库的使用.md)
 	* [CocoaPods 远程私有库的使用](https://github.com/ripperhe/Seemygo-notes/blob/master/01-FM/CocoaPods/CocoaPods远程私有库的使用.md)
 	* [CocoaPods 重要路径](https://github.com/ripperhe/Seemygo-notes/blob/master/01-FM/CocoaPods/CocoaPods重要路径.md)
+* 项目配置
+	* [项目基本配置](https://github.com/ripperhe/Seemygo-notes/blob/master/01-FM/Config/项目基本配置.md)
 
 ## 02-课堂 [@iThinkerYZ](https://github.com/iThinkerYZ)
