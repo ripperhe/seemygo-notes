@@ -23,6 +23,8 @@
 * 组件化
 	* [组件化概念介绍](https://github.com/ripperhe/Seemygo-notes/blob/master/01-FM/Component/组件化概念介绍.md)
 	* [主骨架-组件化(实践)](https://github.com/ripperhe/Seemygo-notes/blob/master/01-FM/Component/主骨架-组件化(实践).md)
+* 二进制化
+	* [静态库-动态库](https://github.com/ripperhe/Seemygo-notes/blob/master/01-FM/Binary/静态库-动态库.md)
 
 
 ## 02-课堂 [@iThinkerYZ](https://github.com/iThinkerYZ)
