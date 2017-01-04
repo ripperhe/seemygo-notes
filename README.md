@@ -22,6 +22,7 @@
 	* [项目基本配置](https://github.com/ripperhe/Seemygo-notes/blob/master/01-FM/Config/项目基本配置.md)
 * 组件化
 	* [组件化概念介绍](https://github.com/ripperhe/Seemygo-notes/blob/master/01-FM/Component/组件化概念介绍.md)
+	* [主骨架-组件化(实践)](https://github.com/ripperhe/Seemygo-notes/blob/master/01-FM/Component/主骨架-组件化(实践).md)
 
 
 ## 02-课堂 [@iThinkerYZ](https://github.com/iThinkerYZ)
