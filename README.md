@@ -32,4 +32,7 @@
 
 * 服务器
 	* [搭建 Web 服务器](https://github.com/ripperhe/Seemygo-notes/blob/master/02-Class/Web/搭建Web服务器.md)
-	
+
+## 申明
+
+所有文本均为小码哥老师上课笔记，**非本人作品**。本人只是将笔记内容进行整理并重新排版，内容方面也做了少许调整。
