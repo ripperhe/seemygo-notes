@@ -25,6 +25,7 @@
 	* [主骨架-组件化(实践)](https://github.com/ripperhe/Seemygo-notes/blob/master/01-FM/Component/主骨架-组件化(实践).md)
 * 二进制化
 	* [静态库-动态库](https://github.com/ripperhe/Seemygo-notes/blob/master/01-FM/Binary/静态库-动态库.md)
+	* [二进制化](https://github.com/ripperhe/Seemygo-notes/blob/master/01-FM/Binary/二进制化.md)
 
 
 ## 02-课堂 [@iThinkerYZ](https://github.com/iThinkerYZ)
