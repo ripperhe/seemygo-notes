@@ -29,3 +29,7 @@
 
 
 ## 02-课堂 [@iThinkerYZ](https://github.com/iThinkerYZ)
+
+* 服务器
+	* [搭建 Web 服务器](https://github.com/ripperhe/Seemygo-notes/blob/master/02-Class/Web/搭建Web服务器.md)
+	
