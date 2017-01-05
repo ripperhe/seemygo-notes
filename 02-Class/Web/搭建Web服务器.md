@@ -20,20 +20,26 @@ Node.js是一个后端的Javascript运行环境，这意味着你可以编写服
 
 ## Node.js工作原理与优缺点（了解一门语言的开始）
 
-传统Web服务器原理(T):传统的网络服务技术，是每个新增一个连接（请求）便生成一个新的线程，这个新的线程会占用系统内存，最终会占掉所有的可用内存。
+### 传统Web服务器原理(T)
 
-Node.js工作原理(T)：只运行在一个单线程中，使用非阻塞的异步 I/O 调用，所有连接都由该线程处理，也就是一个新的连接，不会开启新的线程，仅仅一个线程去处理多个请求。
+传统的网络服务技术，是每个新增一个连接（请求）便生成一个新的线程，这个新的线程会占用系统内存，最终会占掉所有的可用内存。
 
-优点：
+### Node.js工作原理(T)
+
+只运行在一个单线程中，使用非阻塞的异步 I/O 调用，所有连接都由该线程处理，也就是一个新的连接，不会开启新的线程，仅仅一个线程去处理多个请求。
+
+### 优点：
 
 * 传统的比较消耗内存，Node.js只开启一个线程，大大减少内存消耗。
 * 假设是普通的Web程序，新接入一个连接会占用 2M 的内存，在有 8GB RAM的系统上运行时, 算上线程之间上下文切换的成本，并发连接的最大理论值则为 4000 个。这是在传统 Web服务端技术下的处理情况。而 Node.js 则达到了约 1M 一个并发连接的拓展级别
 
-弊端:
+### 弊端:
 
 * 大量的计算可能会使得 Node 的单线程暂时失去反应, 并导致所有的其他客户端的请求一直阻塞, 直到计算结束才恢复正常
 
-疑问？Node.js是单线程的。单线程怎么开启异步?怎么工作的？ 需要了解事件驱动。
+### 疑问？
+
+Node.js是单线程的。单线程怎么开启异步?怎么工作的？ 需要了解事件驱动。
 
 什么是事件驱动?(T)
 
@@ -57,8 +63,8 @@ require() 函数，用于在当前模块中加载和使用其他模块；
 * Express可以处理各种HTTP请求
 * Express是目前最流行的基于Node.js的Web开发框架，
 * Express框架建立在node.js内置的http模块上，可以快速地搭建一个Web服务器
-* Express官方文档
-* Javascript文档
+* [Express官方文档](http://www.expressjs.com.cn/4x/api.html)
+* [Javascript文档](https://msdn.microsoft.com/zh-cn/library/d1et7k7c(v=vs.94).aspx)
 
 ## 搭建Web服务器步骤
 
@@ -66,21 +72,21 @@ require() 函数，用于在当前模块中加载和使用其他模块；
 
 打开终端，输入 `node -v` ，先查看是否已经安装
 
-如果没有安装，就需要安装node软件。
+如果没有安装，就需要安装 node 软件。
 
-mac上可以使用Homebrew，安装node
+mac 上可以使用 Homebrew，安装 node
 
-> Homebrew:Homebrew简称brew，是Mac OSX上的软件包管理工具，能在Mac中方便的安装软件或者卸载软件,相当于window上360管家，可以帮你下载软件。
+> Homebrew 简称 brew，是 macOS 上的软件包管理工具，能在 Mac 中方便的安装软件或者卸载软件,相当于 windows 上360管家，可以帮你下载软件。
 
-先输入`brew -v`,查看mac是否安装了 HomeBrew
+先输入 `brew -v`,查看mac是否安装了 HomeBrew
 
 #### 安装 homebrew
 
-若没有安装ruby，请先安装ruby → 教程([http://www.jianshu.com/p/daa92187621c](http://www.jianshu.com/p/daa92187621c))
+若没有安装 ruby，请先安装 ruby → [教程](http://www.jianshu.com/p/daa92187621c)
 
-使用ruby安装Homebrew，前提是安装了ruby
+使用 ruby 安装Homebrew，前提是安装了 ruby
 
-输入指令安装brew
+输入指令安装 brew
 
 ```bash
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -97,23 +103,23 @@ brew install node
 
 ### 二、安装NPM
 
-NPM是随同NodeJS一起安装的包管理工具，用于下载NodeJS第三方库。
+NPM 是随同 NodeJS 一起安装的包管理工具，用于下载NodeJS第三方库。
 
-类似iOS开发中cocoapods，用于安装第三方框架
+类似 iOS 开发中 cocoapods，用于安装第三方框架
 
-新版的NodeJS已经集成了npm，所以只要安装好Node.JS就好
+新版的 NodeJS 已经集成了 npm，所以只要安装好 Node.JS 就好
 
 ### 三、利用NPM下载第三方模块（Express和Socket.IO）
 
 package.json
 
-package.json类似cocoapods中的Podfile文件
+package.json 类似 cocoapods 中的 Podfile 文件
 
-package.json文件描述了下载哪些第三方框架.
+package.json 文件描述了下载哪些第三方框架
 
-可以使用npm init创建
+可以使用 `npm init` 创建
 
-需要添加dependencies字段，描述添加哪些框架,其他字段随便填
+需要添加 `dependencies` 字段，描述添加哪些框架,其他字段随便填
 注意：不能有中文符号
 
 ```
@@ -131,13 +137,13 @@ npm install
 
 ### 五、创建Node.JS文件，搭建服务器
 
-只要文件，以js为后缀就可以了，比如app.js
+只要文件，以js为后缀就可以了，比如 app.js
 
-使用node app.js 就能执行文件
+使用 node app.js 就能执行文件
 
 注意点：监听端口要注意，不能使用已经占用的端口比如（80），每个服务器相当于一个app，都需要端口，才能找到入口
 
-### 六、简单的搭建Http服务器
+### 六、简单的搭建 Http 服务器
 
 ```javascript
 // require
@@ -187,9 +193,9 @@ console.log("监听8080");
 
 路由:如何响应客户端的请求
 
-添加url路径,根据不同路径，显示不同内容
+添加 url 路径,根据不同路径，显示不同内容
 
-访问地址,/home应该往端口后拼接，8080/home
+访问地址，`/home`应该往端口后拼接，`8080/home`
 
 ```javascript
 var express = require('express');
@@ -231,11 +237,11 @@ server.listen(8080);
 
 优化代码，使代码清晰可读
 
-注意点，函数一定要添加next参数，一定要调用next(),才会进行下面操作，代码使一行一行执行，解释性语言
+注意点，函数一定要添加 `next` 参数，一定要调用 `next()`,才会进行下面操作，代码使一行一行执行，解释性语言
 
 原理，发送一个请求给服务器的时候，会被中间件拦截，先由中间件处理，每个中间件都有一个回调函数作为参数
 
-use是express注册中间件的方法
+`use` 是 `express` 注册中间件的方法
 
 ```javascript
 function(request,response,next){
@@ -267,7 +273,7 @@ server.listen(8080);
 
 ### 十、get请求参数
 
-request.query会把请求参数包装成字典对象，直接通过点就能获取参数
+request.query 会把请求参数包装成字典对象，直接通过点就能获取参数
 
 ```javascript
 var express = require('express');
@@ -287,25 +293,29 @@ console.log('监听8080');
 
 ### 十一、post请求参数
 
-使用http发送请求，需要设置content-type字段
+使用 http 发送请求，需要设置 content-type 字段
 
-content-type字段
+content-type 字段
 
-* application/x-www-form-urlencoded(普通请求，默认一般使用这种)
-* application/json(带有json格式的参数，需要使用这个，比如参数是字典或者数组)
-* multipart/form-data(传输文件，文件上传使用这个)
+| 字段 | 解释 |
+| :-- | :-- |
+| application/x-www-form-urlencoded | 普通请求，默认一般使用这种 |
+| application/json | 带有json格式的参数，需要使用这个，比如参数是字典或者数组 |
+| multipart/form-data | 传输文件，文件上传使用这个 |
 
-AFN框架中AFHTTPRequestSerializer使用的是application/x-www-form-urlencoded，AFJSONRequestSerializer使用的是application/json
+AFN 框架中 `AFHTTPRequestSerializer` 使用的是 `application/x-www-form-urlencoded` ，`AFJSONRequestSerializer` 使用的是 `application/json`
 
-Node.JS需要使用body-parser模块,解析post请求参数，安装body-parser模块，用命令行
+Node.JS 需要使用 `body-parser` 模块,解析 post 请求参数，安装 body-parser 模块，用命令行
 
 ```bash
 npm install body-parser
 ```
 
-可以采用中间件的方式解析post请求参数
+可以采用中间件的方式解析 `post` 请求参数
 
-5.1 注意bodyParser.urlencoded参数是一个字典，需要添加{}`包装，bodyParser.urlencoded({extends:true}) 5.2 extends必传参数，是否展开
+注意 `bodyParser.urlencoded` 参数是一个字典，需要添加{}`包装，bodyParser.urlencoded({extends:true}) 
+
+extends 必传参数，是否展开
 
 ```javascript
 // 解析urlencoded，把参数转换成对象，放入request.body
@@ -348,13 +358,15 @@ console.log('监听8080');
 
 ### 十二、express创建对象返回客户端
 
-{}:字典 []:数组
+`{}`：字典 
 
-自定义对象，才有function
+`[]`：数组
 
-function可以定义函数，也可以定义对象，一般有属性的，都是对象
+自定义对象，才有 `function`
 
-定义对象,this：表示当前对象，类似self
+`function` 可以定义函数，也可以定义对象，一般有属性的，都是对象
+
+定义对象, `this` ：表示当前对象，类似 `self`
 
 对象可以直接输出
 
@@ -414,13 +426,13 @@ console.log('监听8080');
 
 如果把所有代码写在一个文件中，不好维护，代码可读性不好，最好分离文件
 
-使用模块开发，exports用来定义模块接口，可以定义函数，也可以定义自定义对象，需要用module.exports
+使用模块开发，`exports` 用来定义模块接口，可以定义函数，也可以定义自定义对象，需要用 `module.exports`
 
-注意，module.exports和exports不能重复，重复以module.exports为准
+注意，`module.exports` 和 `exports` 不能重复，重复以 `module.exports` 为准
 
-路径问题: ./ : 表示当前文件
+路径问题: `./` ：表示当前文件
 
-main.js
+`main.js` ：
 
 ```javascript
 // 引入express模块
@@ -443,8 +455,11 @@ server.get('/room',function(request,response){
 });
 
 server.listen(8080);
+```
 
-User.js
+`User.js` ：
+
+```javascript
 // exports.log = function(){
 //     console.log("引入其他模块");
 // }
@@ -459,13 +474,15 @@ module.exports = User;
 
 ### 十四、字典和数组删除操作
 
-删除数组splice，splice有2两个参数，第一个参数，从哪个角标开始 第二个参数，删除几个元素
+删除数组 `splice`
 
-删除字典delete
+`splice` 有2两个参数，第一个参数，从哪个角标开始 第二个参数，删除几个元素
 
-注意:delete删除数组，删除不干净，只是把元素删除，当前角标位置并不会移除
+删除字典 `delete`
 
-[1,2,3] 比如delete arr[0] => [,2,3]
+注意：`delete` 删除数组，删除不干净，只是把元素删除，当前角标位置并不会移除
+
+[1,2,3] 比如 `delete arr[0]` => [,2,3]
 
 ```javascript
 // // 加载express模块，
@@ -510,52 +527,41 @@ server.listen(8080);
 
 ### 十五、直播房间服务器搭建
 
-创建package.json,安装express模块
+创建 package.json,安装 express 模块
 
 设计服务器接口和客户端怎么交互
 
 直播房间业务逻辑
 
-3.1 主播主动开启房间
-
-3.2 通知服务器开启房间了 3.3 服务器保存房间
-
-3.4 观众打开房间，查看直播
-
-3.5 主播关闭直播，通知服务器移除房间号
+* 主播主动开启房间
+* 通知服务器开启房间了 3.3 服务器保存房间
+* 观众打开房间，查看直播
+* 主播关闭直播，通知服务器移除房间号
 
 服务器处理
 
-4.1 主播开启房间，创建房间，需要传入给服务器保存
+* 主播开启房间，创建房间，需要传入给服务器保存
+* 服务器用什么保存房间名称，数组还是字典
+* 应该使用字典存储，当主播关闭房间时，可以根据房间号，找到服务器对应的房间号删除。
+* 添加房间，删除房间之后，服务器应该把最新的房间信息返回给客户端展示
+* 服务器可以直接返回房间字典，但是这样客户端必须自己处理下，服务器最好返回房间数组
+* Object.keys(rooms),传入一个字典，就能获取字典中所有 keys，返回一个数组
+* 然后遍历 keys 数组，一个一个取出对应的 value，在保存到数组中
+* 可以使用 map 函数，让数组中所有元素执行一个方法，然后会自动把处理结果包装成数组.
+* map函数原理，就是遍历数组中元素，一个一个执行，map 函数的参数就是一个函数，这个函数的参数就是数组中的一个元素 key，map 需要有返回值，返回值就是 key 参数的处理结果，会自动把处理结果包装到新数组，然后再统一返回处理好的数组
 
-4.2 服务器用什么保存房间名称，数组还是字典
+	```javascript
+	 keys.map(function(key){
+	    return rooms[key];
+	 });
+	```
 
-4.3 应该使用字典存储，当主播关闭房间时，可以根据房间号，找到服务器对应的房间号删除。
-
-4.4 添加房间，删除房间之后，服务器应该把最新的房间信息返回给客户端展示
-
-4.5 服务器可以直接返回房间字典，但是这样客户端必须自己处理下，服务器最好返回房间数组
-
-4.6 Object.keys(rooms),传入一个字典，就能获取字典中所有keys，返回一个数组
-
-4.7 然后遍历keys数组，一个一个取出对应的value，在保存到数组中
-
-4.8 可以使用map函数，让数组中所有元素执行一个方法，然后会自动把处理结果包装成数组.
-
-4.9 map函数原理，就是遍历数组中元素，一个一个执行，map函数的参数就是一个函数，，这个函数的参数就是数组中的一个元素key，map需要有返回值，返回值就是key参数的处理结果，会自动把处理结果包装到新数组，然后再统一返回处理好的数组
-
-```
- keys.map(function(key){
-    return rooms[key];
- });
-```
 客户端处理 
 
-5.1 房间模型(ID,房间名称) 
-
-5.2 保存到服务器字典,ID作为Key,房间名称作为Value 5.3 在发送服务器的时候，需要把ID和Value传给服务器 
-
-5.4 搞两个参数(一个roomID,一个roomName)
+* 房间模型( `ID`，房间名称) 
+* 保存到服务器字典，`ID` 作为 `Key`，房间名称作为 `Value` 
+* 在发送服务器的时候，需要把 `ID` 和 `Value` 传给服务器 
+* 搞两个参数(一个 `roomID`，一个 `roomName`)
 
 服务器代码
 
