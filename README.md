@@ -4,6 +4,8 @@
 
 持续更新ing。。。  🤓
 
+(求视频的同学勿扰，我这里没有未加密的视频 😳 ，想要视频可以去 [万能的淘宝](www.taobao.com) 看看）
+
 <!--https://github.com/ripperhe/Seemygo-notes/blob/master/**/**/**.md-->
 
 ## 01-FM [@wangshunzi](https://github.com/wangshunzi)
