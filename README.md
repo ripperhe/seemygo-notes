@@ -1,4 +1,4 @@
-# Seemygo-notes
+# Seemygo Notes
 
 小码哥 iOS 项目拓展班 - 学习笔记
 
