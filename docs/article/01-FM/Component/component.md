@@ -13,15 +13,15 @@
 * 填写相关参数
 	* 主要注意s.source_files的填写
 	
-	![2_1](https://raw.githubusercontent.com/ripperhe/Seemygo-notes/master/01-FM/Component/image/2_1.png)
+	![2_1](image/2_1.png)
 
 ### 测试
 
 使用指明path的形式添加框架依赖
 
-![2_2](https://raw.githubusercontent.com/ripperhe/Seemygo-notes/master/01-FM/Component/image/2_2.png)
+![2_2](image/2_2.png)
 
-![2_3](https://raw.githubusercontent.com/ripperhe/Seemygo-notes/master/01-FM/Component/image/2_3.png)
+![2_3](image/2_3.png)
 
 ### 注意
 
@@ -43,11 +43,11 @@
 * 步骤
 	* pod lib create XXX
 	
-	![2_4](https://raw.githubusercontent.com/ripperhe/Seemygo-notes/master/01-FM/Component/image/2_4.png)
+	![2_4](image/2_4.png)
 		
 	* 拖入代码到 Classes文件夹, 并删除ReplaceMe.m
 	
-	![2_5](https://raw.githubusercontent.com/ripperhe/Seemygo-notes/master/01-FM/Component/image/2_5.png)
+	![2_5](image/2_5.png)
 	
 	* 在宿主工程中, 直接测试, 没有问题后, 直接由外界以本地库的形式使用
 		
@@ -71,11 +71,11 @@
 1. 私有 Spec Repo 创建
 	* 步骤图解
 	
-	![2_6](https://raw.githubusercontent.com/ripperhe/Seemygo-notes/master/01-FM/Component/image/2_6.png)
+	![2_6](image/2_6.png)
 	
-	![2_7](https://raw.githubusercontent.com/ripperhe/Seemygo-notes/master/01-FM/Component/image/2_7.png)
+	![2_7](image/2_7.png)
 	
-	![2_8](https://raw.githubusercontent.com/ripperhe/Seemygo-notes/master/01-FM/Component/image/2_8.png)
+	![2_8](image/2_8.png)
 		
 	* 问题
 		* 如果报错, 没有权限
@@ -201,7 +201,7 @@ pod update --no-repo-update
 
 * 使用subspec
 
-	![2_9](https://raw.githubusercontent.com/ripperhe/Seemygo-notes/master/01-FM/Component/image/2_9.png)
+	![2_9](image/2_9.png)
 
 * subspec语法
 
@@ -216,7 +216,7 @@ pod update --no-repo-update
 
 ### 外界使用
 
-![2_10](https://raw.githubusercontent.com/ripperhe/Seemygo-notes/master/01-FM/Component/image/2_10.png)
+![2_10](image/2_10.png)
 	
 ## 主框架的组件化
 
@@ -245,11 +245,11 @@ pod update --no-repo-update
 * 所有的图片资源存放在
 	* Assets
 	
-	![2_11](https://raw.githubusercontent.com/ripperhe/Seemygo-notes/master/01-FM/Component/image/2_11.png)	
+	![2_11](image/2_11.png)	
 	
 * 修改podspec文件
 	
-	![2_12](https://raw.githubusercontent.com/ripperhe/Seemygo-notes/master/01-FM/Component/image/2_12.png)	
+	![2_12](image/2_12.png)	
 
 * 执行pod install 重新加载图片
 

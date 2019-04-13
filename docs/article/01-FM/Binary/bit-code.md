@@ -2,7 +2,7 @@
 
 ### 静态库-动态库
 
-详情见 [静态库-动态库](https://github.com/ripperhe/Seemygo-notes/blob/master/01-FM/Binary/静态库-动态库.md)
+详情见 [静态库-动态库](static-dynamic-library.md)
 
 ### 二进制化实践
 
@@ -71,4 +71,4 @@
 	
 ### 自动打包库的脚本
 
-[buildbinary.sh](https://github.com/ripperhe/Seemygo-notes/blob/master/01-FM/Binary/buildbinary.sh)
+[buildbinary.sh](buildbinary.sh)

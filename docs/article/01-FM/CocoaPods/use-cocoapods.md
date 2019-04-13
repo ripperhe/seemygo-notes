@@ -37,7 +37,7 @@ pod search 框架关键字
 * 内部做的事情:
 	* 从本地缓存的"第三方框架描述信息" 生成的检索文件中检索到 相关框架的信息
 * 常见问题:
-	* ![](https://raw.githubusercontent.com/ripperhe/Seemygo-notes/master/01-FM/CocoaPods/image/2_常见问题.png)
+	* ![](image/2_常见问题.png)
 * 解决方案:
 	* 删除cocoapods索引文件
 	
@@ -55,7 +55,7 @@ pod search 框架关键字
 	* [http://www.jianshu.com/p/8af475c4f717](http://www.jianshu.com/p/8af475c4f717)
 * 须知: 可以存放到其他目录, 但必须指定项目工程的位置
 	* `xcodeproj`
-	* ![](https://raw.githubusercontent.com/ripperhe/Seemygo-notes/master/01-FM/CocoaPods/image/2_Podfile位置.png)
+	* ![](image/2_Podfile位置.png)
 * 创建命令
 	
 	```bash
@@ -81,7 +81,7 @@ pod install
 
 ##### 常见错误
 
-* ![](https://raw.githubusercontent.com/ripperhe/Seemygo-notes/master/01-FM/CocoaPods/image/2_常见错误.png)
+* ![](image/2_常见错误.png)
 * 原因: 
 	* `Podfile` 文件就是描述 Xcode 工程中的 `targets`
 		* 如果在老版本没有指明, CocoaPods 会创建一个名称为 `default` 的隐式 `target`，会和我们工程中的第一个 `target` 相对应。
@@ -90,7 +90,7 @@ pod install
 	* 指定依赖目标
 		* target
 	* 修改 `Podfile` 文件内容, 增加
-		* ![](https://raw.githubusercontent.com/ripperhe/Seemygo-notes/master/01-FM/CocoaPods/image/2_增加.png)
+		* ![](image/2_增加.png)
 	* 补充: 可以使用 `link_with` 关键字, 让多个 target 使用同一个 Pod 依赖库
 * 技巧:
 	* 具体可以查看 CocoaPods 官网
@@ -104,7 +104,7 @@ pod install
 ##### pod install 和 pod update 区别
 
 * 图解
-	* ![](https://raw.githubusercontent.com/ripperhe/Seemygo-notes/master/01-FM/CocoaPods/image/2_图解.png)  
+	* ![](image/2_图解.png)  
 * 解释
 	* `installl`
 		* 如果 `Podfile.lock` 文件存在, 直接从此文件中读取框架信息下载安装
@@ -116,7 +116,7 @@ pod install
 	* 主要区别在于, `Podfile` 文件内的框架信息, 版本描述没有指定具体版本
 * 经验: 实际项目开发过程中, 该如何选择 `install` 和 `update` 命令??
 	* 如果多人开发, 首先, 上传到共享库的只有图示的四个文件!!
-		* ![](https://raw.githubusercontent.com/ripperhe/Seemygo-notes/master/01-FM/CocoaPods/image/2_四个文件.png)
+		* ![](image/2_四个文件.png)
 	* 一般情况下, 每个人从共享库把项目下载下来之后, 都会执行 `pod install` 命令安装！而不是选择 `pod update` 
 		* 目的: 是为了保证大家使用的第三方框架版本一致!!
 	* 如果以后大家需要统一升级第三方框架, 那么每个人在执行 `pod update`

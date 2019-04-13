@@ -17,11 +17,11 @@ pod trunk register wangshunzi@520it.com 'wangshunzi'  --verbose
 * `--verbose` 参数是为了便于输出注册过程中的调试信息
 * 成功图解
 	
-![](https://raw.githubusercontent.com/ripperhe/Seemygo-notes/master/01-FM/CocoaPods/image/3_图解1.png)
+![](image/3_图解1.png)
 		
 ---
 		
-![](https://raw.githubusercontent.com/ripperhe/Seemygo-notes/master/01-FM/CocoaPods/image/3_图解2.png)
+![](image/3_图解2.png)
 
 ## 配置并上传框架的 PodSpec 文件
 
@@ -61,7 +61,7 @@ pod trunk push
 
 * 跟 `pull request` 一样，需要作者同意，不过现在较快
 
-![](https://raw.githubusercontent.com/ripperhe/Seemygo-notes/master/01-FM/CocoaPods/image/3_等待审核.png)
+![](image/3_等待审核.png)
 
 ## 更新本地pod 第三方框架信息数据源
 
@@ -73,5 +73,5 @@ pod setup
 
 * 使用 `pod search` 命令搜索自己的框架, 如果可以搜索到, 那么代表审核通过了
 
-![](https://raw.githubusercontent.com/ripperhe/Seemygo-notes/master/01-FM/CocoaPods/image/3_审核通过.png)
+![](image/3_审核通过.png)
 		

@@ -15,10 +15,10 @@ pod spec create XXX
 	
 ## 使用时 PodFile 需要指明安装本地库的路径
 
-![路径1](https://raw.githubusercontent.com/ripperhe/Seemygo-notes/master/01-FM/CocoaPods/image/4_路径1.png)
+![路径1](image/4_路径1.png)
 
 ---
 
-![路径2](https://raw.githubusercontent.com/ripperhe/Seemygo-notes/master/01-FM/CocoaPods/image/4_路径2.png)
+![路径2](image/4_路径2.png)
 			
 			

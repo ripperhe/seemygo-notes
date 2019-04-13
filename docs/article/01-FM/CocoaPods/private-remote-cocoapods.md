@@ -4,15 +4,15 @@
 	
 * 第一步
 
-![](https://raw.githubusercontent.com/ripperhe/Seemygo-notes/master/01-FM/CocoaPods/image/5_创建1.png)
+![](image/5_创建1.png)
 
 * 第二步
 
-![](https://raw.githubusercontent.com/ripperhe/Seemygo-notes/master/01-FM/CocoaPods/image/5_创建2.png)
+![](image/5_创建2.png)
 
 * 第三步
 
-![](https://raw.githubusercontent.com/ripperhe/Seemygo-notes/master/01-FM/CocoaPods/image/5_创建3.png)
+![](image/5_创建3.png)
 	
 ### 创建 Pod 的所需要的项目工程文件，并上传到私有仓库
 

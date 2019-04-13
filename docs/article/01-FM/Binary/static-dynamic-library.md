@@ -157,12 +157,12 @@
 1. 新建工程, 直接选择.framework静态库
 2. 编译时, 设置编译所有架构
 	
-	![1_1](https://raw.githubusercontent.com/ripperhe/Seemygo-notes/master/01-FM/Binary/image/1_1.png)
+	![1_1](image/1_1.png)
 	
 3. 默认制作的是动态库, 需要设置链接类型
 	* `target` → `Build Settings` → 搜索 `Mach-o Type` → 改为静态库
 	
-	![1_2](https://raw.githubusercontent.com/ripperhe/Seemygo-notes/master/01-FM/Binary/image/1_2.png)
+	![1_2](image/1_2.png)
 	
 ## 总结
 
@@ -173,7 +173,7 @@
 	* `.framework` 的需要设置链接类型
 		* `target` → `Build Settings` → 搜索 `Mach-o Type` → 改为静态库
 		
-		![1_2](https://raw.githubusercontent.com/ripperhe/Seemygo-notes/master/01-FM/Binary/image/1_2.png)
+		![1_2](image/1_2.png)
 					
 2. 确定支持模拟器或者真机中的所有架构
 	* `Build Settings` → `Build Active` → `NO`
