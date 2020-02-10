@@ -2,7 +2,7 @@
 
 小码哥 iOS 项目拓展班 - 学习笔记
 
-⚠️ **未完成，已停更**********
+⚠️ **未完成，已停更**
 
 <!--https://github.com/ripperhe/Seemygo-notes/blob/master/docs/article/**/**/**.md-->
 
